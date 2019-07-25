@@ -1,0 +1,64 @@
+{
+  "name": "gotify-notifier",
+  "display_name": "Gotify Notifier",
+  "version": "0.0.1",
+  "description": "Send notifications through a self-hosted Gotify server.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "homepage": "https://github.com/mozilla-iot/gotify-notifier",
+  "author": "Mozilla IoT",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla-iot/gotify-notifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla-iot/gotify-notifier/issues"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "index.js",
+    "node_modules",
+    "gotify-notifier.js"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "type": "notifier",
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "config": {
+      "server": "",
+      "token": ""
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "server",
+        "token"
+      ],
+      "properties": {
+        "server": {
+          "description": "Your Gotify server, e.g. https://example.com",
+          "type": "string"
+        },
+        "token": {
+          "description": "Your app token",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0"
+  }
+}
