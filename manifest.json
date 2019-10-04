@@ -1,0 +1,42 @@
+{
+  "author": "Mozilla IoT",
+  "description": "Send notifications through a self-hosted Gotify server.",
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "notifier",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "homepage_url": "https://github.com/mozilla-iot/gotify-notifier",
+  "id": "gotify-notifier",
+  "license": "MPL-2.0",
+  "manifest_version": 1,
+  "name": "Gotify Notifier",
+  "options": {
+    "default": {
+      "server": "",
+      "token": ""
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "server",
+        "token"
+      ],
+      "properties": {
+        "server": {
+          "description": "Your Gotify server, e.g. https://example.com",
+          "type": "string"
+        },
+        "token": {
+          "description": "Your app token",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "short_name": "Gotify",
+  "version": "0.1.0"
+}
