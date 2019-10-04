@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const manifest = require('./manifest.json');
 
 const {
   Constants,
@@ -62,14 +63,14 @@ class GotifyOutlet extends Outlet {
  * Instantiates one Gotify outlet
  */
 class GotifyNotifier extends Notifier {
-  constructor(addonManager, manifest) {
-    super(addonManager, 'gotify', manifest.name);
+  constructor(addonManager, config) {
+    super(addonManager, 'Gotify', manifest.id);
 
     addonManager.addNotifier(this);
 
     if (!this.outlets['gotify-0']) {
       this.handleOutletAdded(
-        new GotifyOutlet(this, 'gotify-0', manifest.moziot.config)
+        new GotifyOutlet(this, 'gotify-0', config)
       );
     }
   }
