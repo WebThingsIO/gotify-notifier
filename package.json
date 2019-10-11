@@ -1,7 +1,7 @@
 {
   "name": "gotify-notifier",
-  "display_name": "Gotify Notifier",
-  "version": "0.1.0",
+  "display_name": "Gotify",
+  "version": "0.1.1",
   "description": "Send notifications through a self-hosted Gotify server.",
   "main": "index.js",
   "scripts": {

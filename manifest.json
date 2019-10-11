@@ -13,7 +13,7 @@
   "id": "gotify-notifier",
   "license": "MPL-2.0",
   "manifest_version": 1,
-  "name": "Gotify Notifier",
+  "name": "Gotify",
   "options": {
     "default": {
       "server": "",
@@ -38,5 +38,5 @@
     }
   },
   "short_name": "Gotify",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
