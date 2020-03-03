@@ -1,3 +1,4 @@
+*.sha256sum
 *.tgz
 .DS_Store
 SHA256SUMS
