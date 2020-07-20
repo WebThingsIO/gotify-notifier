@@ -1,7 +1,6 @@
 {
   "name": "gotify-notifier",
-  "display_name": "Gotify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Send notifications through a self-hosted Gotify server.",
   "main": "index.js",
   "scripts": {
@@ -26,41 +25,11 @@
     "manifest.json",
     "node_modules"
   ],
-  "moziot": {
-    "api": {
-      "min": 2,
-      "max": 2
-    },
-    "type": "notifier",
-    "plugin": true,
-    "exec": "{nodeLoader} {path}",
-    "config": {
-      "server": "",
-      "token": ""
-    },
-    "schema": {
-      "type": "object",
-      "required": [
-        "server",
-        "token"
-      ],
-      "properties": {
-        "server": {
-          "description": "Your Gotify server, e.g. https://example.com",
-          "type": "string"
-        },
-        "token": {
-          "description": "Your app token",
-          "type": "string"
-        }
-      }
-    }
-  },
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0"
+    "eslint": "^7.5.0"
   }
 }
