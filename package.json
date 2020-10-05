@@ -1,20 +1,20 @@
 {
   "name": "gotify-notifier",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Send notifications through a self-hosted Gotify server.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
-  "homepage": "https://github.com/mozilla-iot/gotify-notifier",
-  "author": "Mozilla IoT",
+  "homepage": "https://github.com/WebThingsIO/gotify-notifier",
+  "author": "WebThingsIO",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla-iot/gotify-notifier.git"
+    "url": "https://github.com/WebThingsIO/gotify-notifier.git"
   },
   "bugs": {
-    "url": "https://github.com/mozilla-iot/gotify-notifier/issues"
+    "url": "https://github.com/WebThingsIO/gotify-notifier/issues"
   },
   "files": [
     "LICENSE",
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0"
+    "eslint": "^7.10.0"
   }
 }

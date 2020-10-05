@@ -1,5 +1,5 @@
 {
-  "author": "Mozilla IoT",
+  "author": "WebThingsIO",
   "description": "Send notifications through a self-hosted Gotify server.",
   "gateway_specific_settings": {
     "webthings": {
@@ -9,7 +9,7 @@
       "strict_min_version": "0.10.0"
     }
   },
-  "homepage_url": "https://github.com/mozilla-iot/gotify-notifier",
+  "homepage_url": "https://github.com/WebThingsIO/gotify-notifier",
   "id": "gotify-notifier",
   "license": "MPL-2.0",
   "manifest_version": 1,
@@ -38,5 +38,5 @@
     }
   },
   "short_name": "Gotify",
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
